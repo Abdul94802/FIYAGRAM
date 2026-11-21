@@ -1,0 +1,54 @@
+# Real Instagram exports, imported records and browser profiles never belong in Git.
+private/
+imports/
+exports/
+dumps/
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+instagram-*
+**/browser-profile/
+**/chrome-profile/
+**/user-data-dir/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated local results and scratch work.
+node_modules/
+coverage/
+test-results/
+playwright-report/
+release/
+.cache/
+.tmp/
+__pycache__/
+*.pyc
+*.log
+.next-build/
+.navigation-update/
+.feature-work/
+.source-baseline.json
+
+# Keep local screenshots private; publish only the reviewed overview image.
+/*.png
+!/features-overview.png
+/*.jpg
+/*.jpeg
+/Screenshot*
+/screenshots/
+
+# Editor/OS files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# index.html is the standalone website and is intentionally committed.
